@@ -16,7 +16,7 @@ class App extends Component {
           }} to="/"><strong>My12Portfolio</strong></Link>} scroll>
             <Navigation >
               <Link to="/resume"><strong>Resume/Contect</strong></Link>
-              <Link to="/aboutme"><strong>AboutMe</strong></Link>
+              <Link to="/aboutme"><strong>1AboutMe</strong></Link>
               <Link to="/projects"><strong>Projects</strong></Link>
             </Navigation>
           </Header>
