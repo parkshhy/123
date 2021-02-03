@@ -15,9 +15,9 @@ class App extends Component {
             color: "white"
           }} to="/123"><strong>MyPortfolio</strong></Link>} scroll>
             <Navigation >
-              <Link to="resume"><strong>Resume/Contect</strong></Link>
-              <Link to="aboutme"><strong>AboutMe</strong></Link>
-              <Link to="projects"><strong>Projects</strong></Link>
+              <Link to="123/resume"><strong>Resume/Contect</strong></Link>
+              <Link to="123/aboutme"><strong>AboutMe</strong></Link>
+              <Link to="123/projects"><strong>Projects</strong></Link>
             </Navigation>
           </Header>
           <Drawer className="navi-grid" title={<Link style={{
@@ -25,9 +25,9 @@ class App extends Component {
             color: "black"
           }} to="/123"><strong>MyPortfolio</strong></Link>}>
             <Navigation>
-              <Link to="resume" ><strong>Resume/Contect</strong></Link>
-              <Link to="aboutme"><strong>AboutMe</strong></Link>
-              <Link to="projects"><strong>Projects</strong></Link>
+              <Link to="123/resume" ><strong>Resume/Contect</strong></Link>
+              <Link to="123/aboutme"><strong>AboutMe</strong></Link>
+              <Link to="123/projects"><strong>Projects</strong></Link>
             </Navigation>
           </Drawer>
           <Content className="navi-grid">
