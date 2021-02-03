@@ -1,38 +1,110 @@
-.App {
+.header-color{
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.landing-grid{
+  background: #4568DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100;
 }
+.navi-grid{
+  background: #4568DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
+.avater-img{
+  height: 250px;
+  padding-top: 5em;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
+.benner-text{
+  opacity: .8;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.benner-text h1{
+  font-size:66px;
+  font-weight: bold;
+  color:rgb(10, 44, 87);
+}
+.banner-text hr{
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+.banner-text p{
+color: white;
+font-size: 10px;
+padding: 1em;
+}
+.social-links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+/*project*/
+.projects-grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 0px 50rem;
+  margin:center;
+  grid-gap: 190px;
+  text-align: center; 
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: auto;
+  align-items: center;
+  margin-top: 1px;
+}
+.box {
+  padding: 10px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+/*contact page*/
+.contact-body{
+  margin:auto;
+  background:gray;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center; 
+  padding-top: 2em;
+}
+.contact-grid{
+ text-align: center;
+ justify-content: center;
+ width:80%;
+ height: 550px;
+ background: white;
+ color: black;
+ border:2px solid red;
+ margin-bottom: 20px;
+}
+.contact-grid h2{
+  font-family: 'Anton',sans-serif;
+}
+.contact-grid p{
+  font-family: '0xygen',sans-serif;
+  font-weight: bold;
+}
+.contact-grid hr{
+  border-top:5px dotted black;
+  width: 50%;
+  margin:auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Resume Page Css*/
+.resume-right-col{
+  background: #27221F;
+  color:white;
+  padding:2em;
 }
