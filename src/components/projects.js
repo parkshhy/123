@@ -188,7 +188,7 @@ class Projects extends Component {
                             <CardActions border style={{ textAlign: "left" }}>
                                 리엑트 포트폴리오
                         </CardActions>
-                            <Button a href="https://parkshhy.github.io/123/">⚙️GIT HUB</Button>
+                            <Button a href="https://github.com/parkshhy/123">⚙️GIT HUB</Button>
                             <CardMenu style={{ color: '#fff' }}>
                                 <IconButton name="share" />
                             </CardMenu>
