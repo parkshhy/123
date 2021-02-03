@@ -16,14 +16,14 @@ class App extends Component {
           }} to="/123"><strong>My Portfolio</strong></Link>} scroll>
             <Navigation >
               <Link to="/resume"><strong>Resume/Contect</strong></Link>
-              <Link to="/aboutme"><strong>1AboutMe</strong></Link>
+              <Link to="/aboutme"><strong>AboutMe</strong></Link>
               <Link to="/projects"><strong>Projects</strong></Link>
             </Navigation>
           </Header>
           <Drawer className="navi-grid" title={<Link style={{
             textDecoration: 'none',
             color: "black"
-          }} to="/"><strong>My Portfolio</strong></Link>}>
+          }} to="/123"><strong>My Portfolio</strong></Link>}>
             <Navigation>
               <Link to="/resume" ><strong>Resume/Contect</strong></Link>
               <Link to="/aboutme"><strong>AboutMe</strong></Link>
