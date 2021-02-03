@@ -13,7 +13,7 @@ class App extends Component {
           <Header className="header-color" title={<Link style={{
             textDecoration: 'none',
             color: "white"
-          }} to="/"><strong>My12Portfolio</strong></Link>} scroll>
+          }} to="/123"><strong>My Portfolio</strong></Link>} scroll>
             <Navigation >
               <Link to="/resume"><strong>Resume/Contect</strong></Link>
               <Link to="/aboutme"><strong>1AboutMe</strong></Link>
@@ -23,7 +23,7 @@ class App extends Component {
           <Drawer className="navi-grid" title={<Link style={{
             textDecoration: 'none',
             color: "black"
-          }} to="/"><strong>MyPortfolio</strong></Link>}>
+          }} to="/"><strong>My Portfolio</strong></Link>}>
             <Navigation>
               <Link to="/resume" ><strong>Resume/Contect</strong></Link>
               <Link to="/aboutme"><strong>AboutMe</strong></Link>
