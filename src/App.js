@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
    
         <p>
-          Edit <code>asdfasfadsssffadsfadsfadsfadsddddfadsfadsfadsffs</code> and save to reload.
+          Edit <code>a1111111</code> and save to reload.
         </p>
         <a
           className="App-link"
