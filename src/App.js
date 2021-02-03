@@ -25,9 +25,9 @@ class App extends Component {
             color: "black"
           }} to="/123"><strong>My Portfolio</strong></Link>}>
             <Navigation>
-              <Link to="/resume" ><strong>Resume/Contect</strong></Link>
-              <Link to="/aboutme"><strong>AboutMe</strong></Link>
-              <Link to="/projects"><strong>Projects</strong></Link>
+              <Link to="/resume" style={{color:"black"}}><strong>Resume/Contect</strong></Link>
+              <Link to="/aboutme" style={{color:"black"}}><strong>AboutMe</strong></Link>
+              <Link to="/projects" style={{color:"black"}}><strong>Projects</strong></Link>
             </Navigation>
           </Drawer>
           <Content className="navi-grid">
