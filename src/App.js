@@ -13,7 +13,7 @@ class App extends Component {
           <Header className="header-color" title={<Link style={{
             textDecoration: 'none',
             color: "white"
-          }} to="/"><strong>My1Portfolio</strong></Link>} scroll>
+          }} to="/"><strong>My12Portfolio</strong></Link>} scroll>
             <Navigation >
               <Link to="/resume"><strong>Resume/Contect</strong></Link>
               <Link to="/aboutme"><strong>AboutMe</strong></Link>
