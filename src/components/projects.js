@@ -186,8 +186,8 @@ class Projects extends Component {
                             리액트 포트폴리오
                         </CardText>
                         <CardActions border>
-                            <Button a href="https://github.com/parkshhy/123">⚙️GIT HUB</Button>
-                            <Button a href="https://parkshhy.github.io/123/">🖥WEB PAGE</Button>
+                            <Button a href="https://github.com/parkshhy/123" target = "_blank">⚙️GIT HUB</Button>
+                            <Button a href="https://parkshhy.github.io/123/" target = "_blank">🖥WEB PAGE</Button>
                             </CardActions>  
                         </Card>
 
@@ -199,8 +199,8 @@ class Projects extends Component {
                         </CardText>
                      
                         <CardActions border>
-                            <Button a href="https://github.com/parkshhy/todoapp">⚙️GIT HUB</Button>
-                            <Button a href="https://parkshhy.github.io/todoapp/">🖥WEB PAGE</Button>
+                            <Button a href="https://github.com/parkshhy/todoapp" target = "_blank">⚙️GIT HUB</Button>
+                            <Button a href="https://parkshhy.github.io/todoapp/" target = "_blank">🖥WEB PAGE</Button>
                         </CardActions>
                        </Card>
 
