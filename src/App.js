@@ -11,7 +11,7 @@ class App extends Component {
           <Header title={<span><span style={{ color: '#ddd' }}>Area / </span><strong>The Title</strong></span>}>
               <Navigation>
                   <a href="/">Linddddk</a>
-                  <a href="/">Link</a>
+                  <a href="/">Lidnk</a>
                   <a href="/">Link</a>
                   <a href="/">Link</a>
               </Navigation>
