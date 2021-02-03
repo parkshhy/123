@@ -20,12 +20,12 @@ class Resume extends Component {
                         </div>
                         <h2 style={{ paddingTop: '1' }}>박 상 현</h2>
                         <h4 style={{ color: 'black' }}>👨‍💻Programmer</h4>
-                        <hr style={{ borderTop: '3px solid #833fb2', width: '80%' }} />
+                        <hr style={{ borderTop: '3px solid #174DBA', width: '80%' }} />
                         <p>안녕하십니까 <br/>저의 포트폴리오에 방문해 주셔서 감사합니다.<br/>
                             IT에 매력을느껴 전공을 변경한 뒤, 끊임없는 자기개발에 <br/>힘쓰고 있습니다.  
                             다방면에서 활약할수 있는 개발자가 되<br/> 도록 노력하겠습니다. 감사합니다.
                         </p>
-                        <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
+                        <hr style={{ borderTop: '3px solid #174DBA', width: '50%' }} />
                         <h5>🏠Address</h5>
                         <p>서울특별시 도봉구 방학동</p>
                         <h5>📲Phone</h5>
@@ -52,7 +52,7 @@ class Resume extends Component {
                             schoolName="종로 중앙HTA"
                             schoolDescription="웹서버사이드 프로그래밍 과정"
                         />
-                        <hr style={{ borderTop: '3px solid #e22947' }}></hr>
+                        <hr style={{ borderTop: '3px solid #D8EFE6' }}></hr>
 
                         <h2>Experience</h2>
                         <Experience
@@ -103,7 +103,7 @@ class Resume extends Component {
                        jobName="일본 OPENSESAME TEC"
                        jobDescription=" OPENSESAME TEC 근무"
                    />
-                   <hr style={{ borderTop: '3px solid #e22947' }}></hr>
+                   <hr style={{ borderTop: '3px solid #D8EFE6' }}></hr>
 
 
  </Cell>

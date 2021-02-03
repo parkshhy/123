@@ -183,31 +183,26 @@ class Projects extends Component {
                         <Card className="box" shadow={5} style={{ minWidh: '450', margin: 'auto' }}>
                             <img src={Port} alt="kojinProject" style={{ height: '178px' }} />
                             <CardText>
-                                개인프로젝트
+                            리액트 포트폴리오
                         </CardText>
-                            <CardActions border style={{ textAlign: "left" }}>
-                                리엑트 포트폴리오
-                        </CardActions>
+                        <CardActions border>
                             <Button a href="https://github.com/parkshhy/123">⚙️GIT HUB</Button>
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
+                            <Button a href="https://parkshhy.github.io/123/">🖥WEB PAGE</Button>
+                            </CardActions>  
                         </Card>
+
                       {/*Project1*/}
                         <Card className="box" shadow={5} style={{ minWidh: '450', margin: 'auto' }}>
                         <img src={Todo} alt="kannrisystem" style={{ height: '178px' }} />
                             <CardText>
-                                개인프로젝트
+                                리액트 스케쥴관리시스템
                         </CardText>
                      
-                            <CardActions border style={{ textAlign: "left" }}>
-                                리엑트 스케줄관리시스템
+                        <CardActions border>
+                            <Button a href="https://github.com/parkshhy/todoapp">⚙️GIT HUB</Button>
+                            <Button a href="https://parkshhy.github.io/todoapp/">🖥WEB PAGE</Button>
                         </CardActions>
-                            <Button onClick={(e) => this.setState({ isOpen: true })}>⚙️GIT HUB</Button>
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
+                       </Card>
 
                         {/*Project2*/}
                         <Card className="box" shadow={5} style={{ minWidh: '450', margin: 'auto' }}>
@@ -217,12 +212,12 @@ class Projects extends Component {
                             }}>
                             </CardTitle>
                             <CardText>
-                                개인프로젝트
+                            리액트 네이티브 날씨어플
                         </CardText>
                             <CardActions border style={{ textAlign: "left" }}>
-                            리엑트 네이티브 날씨어플
+                            
                         </CardActions>
-                            <Button disabled="disabled" onClick={(e) => this.setState({ isOpen: true })}>⚙️is Coming soon</Button>
+                            <Button disabled="disabled" onClick={(e) => this.setState({ isOpen: true })}>is Coming soon</Button>
                             <CardMenu style={{ color: '#fff' }}>
                                 <IconButton name="share" />
                             </CardMenu>

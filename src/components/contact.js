@@ -15,7 +15,7 @@ class Contact extends Component {
                             />
                         <p style={{ width: '75%', margin: 'auto', padding: '1em' }}>
                            안녕하십니까 귀사에 지원하게 된 박상현 입니다
-                           <br/>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+                           <br/>
                          
                             <h2>박 상 현</h2>
                          </p>
@@ -31,11 +31,7 @@ class Contact extends Component {
                                 </ListItem>
                                 <ListItem>
                                     <ListItemContent icon="person" style={{fontSize:'30px',marginLeft:150}}> 
-                                    rainbluebirdsky@gmail.com</ListItemContent>
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemContent icon="person" style={{fontSize:'30px',marginLeft:150}}> 
-                                    rainbluebird@naver.com</ListItemContent>
+                                    rainbluebird8@gmail.com</ListItemContent>
                                 </ListItem>
                             </List>
                         </div>

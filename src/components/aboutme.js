@@ -36,17 +36,17 @@ class Aboutme extends Component {
                    progress={70}  buffer={30}
                    />
                  
-                  <Skills
+                  <Skills 
                    skills="💻CSS"
                    progress={70} buffer={37}
                    />
-                   <hr style={{ borderTop: '3px solid #696969' }}></hr>
+                   <hr style={{ borderTop: '3px solid #395181' }}></hr>
                    <h5>Backend</h5>
                     <Skills
                    skills="⌨️JAVA"
                    progress={50} buffer={50}
                    />
-                   <hr style={{ borderTop: '3px solid #696969' }}></hr>
+                   <hr style={{ borderTop: '3px solid #395181' }}></hr>
                     <h5>FW</h5>
                     <Skills
                    skills="⚒️SPRING"
@@ -60,7 +60,7 @@ class Aboutme extends Component {
                    skills="⚒️React Native"
                    progress={50} buffer={50}
                    />
-                   <hr style={{ borderTop: '3px solid #696969' }}></hr>
+                   <hr style={{ borderTop: '3px solid #395181' }}></hr>
                    <h5>DB</h5>
                    <Skills
                    skills="📊Oracle"
@@ -74,7 +74,7 @@ class Aboutme extends Component {
                    skills="📊MongoDB"
                    progress={50}
                    />
-                   <hr style={{ borderTop: '3px solid #696969' }}></hr>
+                   <hr style={{ borderTop: '3px solid #395181' }}></hr>
 
                    <h5>Language</h5>
                    <Skills
@@ -89,7 +89,7 @@ class Aboutme extends Component {
                    skills="🇺🇸English"
                    progress={55} buffer={45}
                    />
-                   <hr style={{ borderTop: '3px solid #696969' }}></hr>     
+                   <hr style={{ borderTop: '3px solid #395181' }}></hr>     
 
  </Cell>
                 </Grid>
