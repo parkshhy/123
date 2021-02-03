@@ -10,7 +10,7 @@ class App extends Component {
       <Layout fixedHeader>
           <Header title={<span><span style={{ color: '#ddd' }}>Area / </span><strong>The Title</strong></span>}>
               <Navigation>
-                  <a href="/">Link</a>
+                  <a href="/">Linddddk</a>
                   <a href="/">Link</a>
                   <a href="/">Link</a>
                   <a href="/">Link</a>
