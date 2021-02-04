@@ -56,10 +56,6 @@ class Aboutme extends Component {
                    skills="⚒️React"
                    progress={60} buffer={40}
                    />
-                   <Skills
-                   skills="⚒️React Native"
-                   progress={50} buffer={50}
-                   />
                    <hr style={{ borderTop: '3px solid #395181' }}></hr>
                    <h5>DB</h5>
                    <Skills
@@ -69,10 +65,6 @@ class Aboutme extends Component {
                     <Skills
                    skills="📊MySql"
                    progress={40}
-                   />
-                    <Skills
-                   skills="📊MongoDB"
-                   progress={50}
                    />
                    <hr style={{ borderTop: '3px solid #395181' }}></hr>
 

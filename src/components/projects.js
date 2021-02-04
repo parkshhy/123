@@ -162,7 +162,7 @@ class Projects extends Component {
                             </CardText>
                             <CardActions border style={{ textAlign: "left" }}>
                                 근무처:일본 나고야 [오픈세사미테크노롤지]<br />
-                               프로젝트기간 : 2019.5~2020.10<br />
+                               프로젝트기간 : 2020.5~2020.10<br />
                                프로젝트내용 : 자동차 운행관리시스템 개발<br />
                                담담업무 : 리액트 프론트엔트 담당 <br />
                                 <br />
