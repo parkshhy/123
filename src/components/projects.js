@@ -199,8 +199,8 @@ class Projects extends Component {
                         </CardText>
                      
                         <CardActions border>
-                            <Button a href="https://github.com/parkshhy/todoapp" target = "_blank">⚙️GIT HUB</Button>
-                            <Button a href="https://parkshhy.github.io/todoapp/" target = "_blank">🖥WEB PAGE</Button>
+                            <Button a href="https://github.com/parkshhy/todo" target = "_blank">⚙️GIT HUB</Button>
+                            <Button a href="https://parkshhy.github.io/todo/" target = "_blank">🖥WEB PAGE</Button>
                         </CardActions>
                        </Card>
 
