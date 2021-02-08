@@ -14,7 +14,7 @@ class Contact extends Component {
                             style={{ height: '350px' }}
                             />
                         <p style={{ width: '75%', margin: 'auto', padding: '1em' }}>
-                           안녕하십니까 귀사에 지원하게 된 박상현 입니다
+                         
                            <br/>
                          
                             <h2>박 상 현</h2>
