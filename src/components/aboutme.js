@@ -10,13 +10,14 @@ class Aboutme extends Component {
                 <Grid >
                     <Cell style={{}} className="resume-right-col" col={4}>
                     <h2>Certificate</h2>
-                    <h4>・ JLPT N2</h4>
+                    <h4>・ JLPT N1</h4>
                     <h4>・ 정보처리산업기사</h4>
                     <h4>・ 대한항공예약프로그램 토파즈</h4>
                     <h4>・ 운전면허보통1종</h4>
                     <hr style={{ borderTop: '3px solid #696969' }}></hr>
                     <h2>2021 Resolution</h2>                    
                     <h4>・ TOEIC 720</h4>
+                    <h4>・ CCNA</h4>
                     </Cell>
 
                     <Cell className="resume-right-col" col={8}>
