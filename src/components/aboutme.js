@@ -10,7 +10,7 @@ class Aboutme extends Component {
                 <Grid >
                     <Cell style={{}} className="resume-right-col" col={4}>
                     <h2>Certificate</h2>
-                    <h4>・ JLPT N2</h4>
+                    <h4>・ JLPT  N2</h4>
                     <h4>・ 情報処理産業技師（基本情報技術者）</h4>
                     <h4>・ 大韓航空予約プログラム TOPAS</h4>
                     <h4>・ 運転免許証</h4>
