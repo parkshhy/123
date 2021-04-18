@@ -10,14 +10,10 @@ class Aboutme extends Component {
                 <Grid >
                     <Cell style={{}} className="resume-right-col" col={4}>
                     <h2>Certificate</h2>
-                    <h4>・ JLPT N1</h4>
-                    <h4>・ 정보처리산업기사</h4>
-                    <h4>・ 대한항공예약프로그램 토파즈</h4>
-                    <h4>・ 운전면허보통1종</h4>
-                    <hr style={{ borderTop: '3px solid #696969' }}></hr>
-                    <h2>2021 Resolution</h2>                    
-                    <h4>・ TOEIC 720</h4>
-                    <h4>・ CCNA</h4>
+                    <h4>・ JLPT N2</h4>
+                    <h4>・ 情報処理産業技師（基本情報技術者）</h4>
+                    <h4>・ 大韓航空予約プログラム TOPAS</h4>
+                    <h4>・ 運転免許証</h4>
                     </Cell>
 
                     <Cell className="resume-right-col" col={8}>
@@ -45,28 +41,36 @@ class Aboutme extends Component {
                    <h5>Backend</h5>
                     <Skills
                    skills="⌨️JAVA"
-                   progress={50} buffer={50}
+                   progress={60} buffer={40}
                    />
                    <hr style={{ borderTop: '3px solid #395181' }}></hr>
                     <h5>FW</h5>
                     <Skills
-                   skills="⚒️SPRING"
-                   progress={40}
+                   skills="⚒️SPRING Boot"
+                   progress={50} buffer={40}
                    />
                     <Skills
                    skills="⚒️React"
+                   progress={60} buffer={40}
+                   />
+                    <Skills
+                   skills="⚒️React Native"
                    progress={60} buffer={40}
                    />
                    <hr style={{ borderTop: '3px solid #395181' }}></hr>
                    <h5>DB</h5>
                    <Skills
                    skills="📊Oracle"
-                   progress={60}
+                   progress={65}
                    />
                     <Skills
                    skills="📊MySql"
-                   progress={40}
+                   progress={65}
                    />
+                    <Skills
+                   skills="📊MariaDB"
+                   progress={65}
+                   /> 
                    <hr style={{ borderTop: '3px solid #395181' }}></hr>
 
                    <h5>Language</h5>
@@ -76,7 +80,7 @@ class Aboutme extends Component {
                    />
                    <Skills
                    skills="🇯🇵Japanese"
-                   progress={90}
+                   progress={90} buffer={10}
                    />
                    <Skills
                    skills="🇺🇸English"

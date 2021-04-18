@@ -1,13 +1,10 @@
 .header-color{
-  background: #0f0c29;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+  background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
 .landing-grid{
-  background: #00416A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-     text-align: center;
+       text-align: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -15,10 +12,10 @@
   height: 100;
 }
 .navi-grid{
-  background: #00416A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+  background: #757F9A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .avater-img{
   height: 250px;
@@ -54,18 +51,19 @@ padding: 1em;
 .projects-grid {
   display: grid;
   grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 0px 50rem;
+  grid-template-rows: 50px 50rem;
   margin:center;
-  grid-gap: 190px;
+  grid-gap: 200px;
   text-align: center; 
   justify-content: center;
   padding: auto;
   align-items: center;
-  margin-top: 1px;
+  margin-top: 10px;
+
 }
 .box {
   padding: 10px;
-  
+
 }
 
 
@@ -94,12 +92,13 @@ padding: 1em;
 
 /*Resume Page Css*/
 .resume-right-col{
-  background: #bdc3c7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
   border-radius: 10px;
 
   color:white;
   padding:2em;
 }
+
