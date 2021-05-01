@@ -28,7 +28,7 @@ class App extends Component {
               <Link to="/resume" style={{color:"black"}}><strong>Resume/Contect</strong></Link>
               <Link to="/aboutme" style={{color:"black"}}><strong>AboutMe</strong></Link>
               <Link to="/projects" style={{color:"black"}}><strong>Projects</strong></Link>
-            </Navigation>
+           </Navigation>
           </Drawer>
           <Content className="navi-grid">
             <div className="page-content" />

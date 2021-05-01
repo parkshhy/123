@@ -1,68 +1,203 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, CardMenu, IconButton, Button, CardText} from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, CardMenu, IconButton, Button, CardText, Dialog } from 'react-mdl';
 import Port from './CSS/Portfolio.png';
 import Todo from './CSS/todo.png';
 import Semi from './CSS/semi.png';
 import FINAL from './CSS/FINAL.png';
 import SARAM from './CSS/5555.png';
-
-
+import Project1 from './CSS/project1/1.png'
+import Project2 from './CSS/project1/2.png'
+import Project3 from './CSS/project1/3.png'
+import Project4 from './CSS/project1/4.png'
+import Project5 from './CSS/project1/5.png'
+import Project6 from './CSS/project1/6.png'
+import Project7 from './CSS/project1/7.png'
+import Project8 from './CSS/project1/8.png'
+import Project11 from './CSS/project2/11.png'
+import Project12 from './CSS/project2/12.png'
+import Project13 from './CSS/project2/13.png'
+import Project14 from './CSS/project2/14.png'
+import SPRING from './CSS/img.jpeg'
+import SPRING1 from './CSS/springbook.jpeg'
+import JAVABOOK from './CSS/javabook.jpeg'
 
 class Projects extends Component {
     constructor(props) {
         super(props);
         this.state = { activeTab: 0 };
-
+        this.handleOpenDialog = this.handleOpenDialog.bind(this);
+        this.handleCloseDialog = this.handleCloseDialog.bind(this);
+        this.handleOpenDialog1 = this.handleOpenDialog1.bind(this);
+        this.handleCloseDialog1 = this.handleCloseDialog1.bind(this);
+        this.handleOpenDialog2 = this.handleOpenDialog2.bind(this);
+        this.handleCloseDialog2 = this.handleCloseDialog2.bind(this);
     }
+
     state = {
         isOpen: false
     };
-  
-   
+
+    handleOpenDialog() {
+        this.setState({
+            openDialog: true,
+        });
+    }
+
+    handleCloseDialog() {
+        this.setState({
+            openDialog: false,
+        });
+    }
+    handleOpenDialog1() {
+        this.setState({
+            openDialog1: true
+        });
+    }
+
+    handleCloseDialog1() {
+        this.setState({
+            openDialog1: false
+        });
+    }
+    handleOpenDialog2() {
+        this.setState({
+            openDialog2: true
+        });
+    }
+
+    handleCloseDialog2() {
+        this.setState({
+            openDialog2: false
+        });
+    }
 
 
     toggleCategories() {
-        if (this.state.activeTab === 0) {
+        if (this.state.activeTab === 1) {
             return (
                 <div>
                     <div className="projects-grid">
 
-                      {/*Project1*/}
+                        {/*Project1*/}
                         <Card className="box" shadow={5} style={{ minWidh: '450', margin: 'auto' }}>
-                        <img src={Semi} alt="kannrisystem" style={{ height: '178px' }} />
+
+                            <img src={Semi} alt="kannrisystem" style={{ height: '178px' }} />
+
                             <CardText>
-                               図書管理システム
+                                図書管理システム
                             </CardText>
-                            <CardActions border style={{ textAlign: "left" }}>
-                                韓国 中央HTA<br />
-                                プロジェクト 期間 : 2016.6~2016.7<br />
-                                プロジェクト 内容 : 図書管理システム<br />
-                               言語 : JAVA,JSP,ORCAL,HTML/CSS<br />
-                            </CardActions>
+
+                            <Button colored onClick={this.handleOpenDialog1} raised ripple target="1">詳細</Button>
+                            <Dialog open={this.state.openDialog1} onClick={this.handleCloseDialog1} keyType="1" style={{
+                                color: 'black', height: '80%', margin: 'auto', width: '60%'
+                            }}>
+                                <div>
+                                    <Grid >
+                                        <Cell style={{}} className="modal" col={7}>
+
+                                            <h2>図書管理システム</h2>
+                                            <hr style={{ borderTop: '3px solid #395181' }}></hr>
+
+                                            <img src={Project1} alt="project1" style={{ width: '100%' }} />
+                    DB構造図
+                    <hr style={{ borderTop: '3px solid #395181' }}></hr>
+
+                                            <img src={Project2} alt="project1" style={{ width: '100%' }} />
+                    全体CSS, ホームページ実行時のポップアップ実行,会員加入担当
+                    <hr style={{ borderTop: '3px solid #395181' }}></hr>
+
+
+                                            <img src={Project3} alt="project1" style={{ width: '100%' }} />
+                    1.MAIN HEADスライド広告<br />
+                    2.当該イメージクリックで図書ページに移動
+                    <hr style={{ borderTop: '3px solid #395181' }}></hr>
+
+                                            <img src={Project4} alt="project1" style={{ width: '100%' }} />
+                    会員加入時に有効性検査する(Ajax)
+                    <hr style={{ borderTop: '3px solid #395181' }}></hr>
+
+
+                                            <img src={Project5} alt="project1" style={{ width: '100%' }} />
+                    図書アップロード画面
+                    <hr style={{ borderTop: '3px solid #395181' }}></hr>
+
+                                            <img src={Project6} alt="project1" style={{ width: '100%' }} />
+                    図書詳細ページ
+                    <hr style={{ borderTop: '3px solid #395181' }}></hr>
+
+                                            <img src={Project7} alt="project1" style={{ width: '100%' }} />
+                    図書ページ
+                    <hr style={{ borderTop: '3px solid #395181' }}></hr>
+
+                                            <img src={Project8} alt="project1" style={{ width: '100%' }} />
+                    買い物かご
+                    <hr style={{ borderTop: '3px solid #395181' }}></hr>
+
+                                        </Cell>
+
+                                        <Cell className="modal" col={5}>
+                                            <h3>韓国 中央HTA</h3>
+                                            <hr style={{ borderTop: '3px solid #395181' }}></hr>
+                    プロジェクト 期間 : 2016.6~2016.7<br />
+                    プロジェクト 内容  : 도서관리시스템개발<br />
+                    言語 : JAVA,JSP,ORCAL,HTML/CSS<br />
+                    DB : ORACLE
+                    </Cell>
+                                    </Grid></div>
+                            </Dialog>
                             <CardMenu style={{ color: '#fff' }}>
                                 <IconButton name="share" />
                             </CardMenu>
                         </Card>
 
-                        {/*Project2*/}
+
+
+                        {/*--------------------------------------------------Project2-----------------------------------------------------------*/}
+
                         <Card className="box" shadow={5} style={{ minWidh: '450', margin: 'auto' }}>
-                        <img src={FINAL} alt="kannrisystem" style={{ height: '178px' }} />
+                            <img src={FINAL} alt="kannrisystem" style={{ height: '178px' }} />
                             <CardText>
                                 スポーツサイト
                             </CardText>
-                            <CardActions border style={{ textAlign: "left" }}>
-                            韓国 中央HTA<br />
+                            <Button colored onClick={this.handleOpenDialog2} raised ripple target="1">詳細</Button>
+                            <Dialog open={this.state.openDialog2} onClick={this.handleCloseDialog2} keyType="1" style={{
+                                color: 'black', height: '80%', margin: 'auto', width: '60%'
+                            }}>
+                                <div>
+                                    <Grid >
+                                        <Cell style={{}} className="modal" col={7}>
+
+                                            <h2>スポーツサイト</h2>
+                                            <hr style={{ borderTop: '3px solid #395181' }}></hr>
+                                            <img src={Project11} alt="project1" style={{ width: '100%' }} />
+                                            <img src={Project12} alt="project1" style={{ width: '100%' }} />
+                    DB構造図
+                    <hr style={{ borderTop: '3px solid #395181' }}></hr>
+
+                                            <img src={Project13} alt="project1" style={{ width: '100%' }} />
+                                            <img src={Project14} alt="project1" style={{ width: '100%' }} />
+                    自由掲示板(CURD)
+                    <hr style={{ borderTop: '3px solid #395181' }}></hr>
+
+                                        </Cell>
+
+                                        <Cell className="modal" col={5}>
+                                            <h3>韓国 中央HTA</h3>
+                                            <hr style={{ borderTop: '3px solid #395181' }}></hr>
+
                             プロジェクト 期間 : 2016.9~2016.10<br />
                             プロジェクト 内容 : スポーツサイト<br />
-                            言語 : JAVA,MYSQL,HTML/CSS,<br />SPRING<br />
-                            </CardActions>
+                            言語 : JAVA,MYSQL,HTML/CSS,<br />
+                                        </Cell>
+                                    </Grid></div>
+                            </Dialog>
                             <CardMenu style={{ color: '#fff' }}>
                                 <IconButton name="share" />
                             </CardMenu>
                         </Card>
                     </div></div>
             )
-        } else if (this.state.activeTab === 2) {
+        } else if (this.state.activeTab === 3) {
             return (
                 <div>
                     <div className="projects-grid">
@@ -98,7 +233,7 @@ class Projects extends Component {
                                 DENSO
                             </CardText>
                             <CardActions border style={{ textAlign: "left" }}>
-                            勤務先 :日本 名古屋 [DENSO]<br />
+                                勤務先 :日本 名古屋 [DENSO]<br />
                             プロジェクト期間 : 2018.5~2019.5<br />
                             プロジェクト内容 : 車両通信モジュール(DCM)<br />維持保守
                             テスト 業務担当<br />
@@ -116,7 +251,7 @@ class Projects extends Component {
 
 
 
-                                
+
                             }}>
 
                             </CardTitle>
@@ -124,10 +259,10 @@ class Projects extends Component {
                                 TOYOTA
                             </CardText>
                             <CardActions border style={{ textAlign: "left" }}>
-                            勤務先 : 日本 名古屋 [TOYOTA]<br />
+                                勤務先 : 日本 名古屋 [TOYOTA]<br />
                             プロジェクト期間 : 2019.6~2019.11<br />
                             プロジェクト内容 : TOYOTA連携システム <br />維持保守 担当<br />
-                              
+
                             </CardActions>
                             <CardMenu style={{ color: '#fff' }}>
                                 <IconButton name="share" />
@@ -146,7 +281,7 @@ class Projects extends Component {
                                 TOYOTA SYSTEMS
                             </CardText>
                             <CardActions border style={{ textAlign: "left" }}>
-                            勤務先 : 日本 名古屋 [TOYOTA SYSTEMS]<br />
+                                勤務先 : 日本 名古屋 [TOYOTA SYSTEMS]<br />
                             プロジェクト期間 : 2019.12~2020.4<br />
                             プロジェクト内容 : TOYOTA KITORA FW<br /> 維持保守 担当
                                <br />
@@ -167,7 +302,7 @@ class Projects extends Component {
                                 Open Sesame Tec
                             </CardText>
                             <CardActions border style={{ textAlign: "left" }}>
-                            勤務先:日本 名古屋 [Open Sesame Tec]<br />
+                                勤務先:日本 名古屋 [Open Sesame Tec]<br />
                             プロジェクト期間 : 2020.5~2020.10<br />
                             プロジェクト内容 : 車 運行管理システム 開発<br />
                                React フロントエンド 担当 <br />
@@ -179,15 +314,15 @@ class Projects extends Component {
                         </Card>
 
                         <Card className="box" shadow={5} style={{ minWidh: '450', margin: 'auto' }}>
-                        <img src={SARAM} alt="kannrisystem" style={{ height: '178px' }} />
+                            <img src={SARAM} alt="kannrisystem" style={{ height: '178px' }} />
                             <CardText>
-                               Media Group
+                                Media Group
                             </CardText>
                             <CardActions border style={{ textAlign: "left" }}>
-                            勤務先 : 韓国 ソウル [Media Group 人と森]<br />
+                                勤務先 : 韓国 ソウル [Media Group 人と森]<br />
                             プロジェクト期間 : 2020.12~現在<br />
                             プロジェクト内容 :  アノテーション管理システム <br />バックエンド　担当 <br />
-                        
+
                             </CardActions>
                             <CardMenu style={{ color: '#fff' }}>
                                 <IconButton name="share" />
@@ -197,7 +332,7 @@ class Projects extends Component {
 
                     </div></div >
             )
-        } else if (this.state.activeTab === 1) {
+        } else if (this.state.activeTab === 2) {
             return (
                 <div>
                     <div className="projects-grid">
@@ -207,30 +342,30 @@ class Projects extends Component {
                         <Card className="box" shadow={5} style={{ minWidh: '450', margin: 'auto' }}>
                             <img src={Port} alt="kojinProject" style={{ height: '178px' }} />
                             <CardText>
-                            React ポートフォリオ
+                                React ポートフォリオ
                         </CardText>
-                        <CardActions border>
-                            <Button a href="https://github.com/parkshhy/123" target = "_blank">⚙️GIT HUB</Button>
-                            <Button a href="https://parkshhy.github.io/123/" target = "_blank">🖥WEB PAGE</Button>
-                            </CardActions>  
+                            <CardActions border>
+                                <Button a href="https://github.com/parkshhy/123" target="_blank">⚙️GIT HUB</Button>
+                                <Button a href="https://parkshhy.github.io/123/" target="_blank">🖥WEB PAGE</Button>
+                            </CardActions>
                         </Card>
 
-                      {/*Project2*/}
+                        {/*Project2*/}
                         <Card className="box" shadow={5} style={{ minWidh: '450', margin: 'auto' }}>
-                        <img src={Todo} alt="kannrisystem" style={{ height: '178px' }} />
+                            <img src={Todo} alt="kannrisystem" style={{ height: '178px' }} />
                             <CardText>
                                 React Todo 管理システム
                         </CardText>
-                     
-                        <CardActions border>
-                            <Button a href="https://github.com/parkshhy/todo" target = "_blank">⚙️GIT HUB</Button>
-                            <Button a href="https://parkshhy.github.io/todo/" target = "_blank">🖥WEB PAGE</Button>
-                        </CardActions>
-                       </Card>
 
-                         {/*Project3
+                            <CardActions border>
+                                <Button a href="https://github.com/parkshhy/todo" target="_blank">⚙️GIT HUB</Button>
+                                <Button a href="https://parkshhy.github.io/todo/" target="_blank">🖥WEB PAGE</Button>
+                            </CardActions>
+                        </Card>
+
+                        {/*Project3*/}
                         <Card className="box" shadow={5} style={{ minWidh: '450', margin: 'auto' }}>
-                        <CardTitle style={{
+                            <CardTitle style={{
                                 color: 'black', height: '176px',
                                 background: 'url(https://www.filepicker.io/api/file/pYSVfRZFSixwoQtS1XQH) center / cover'
                             }}>
@@ -238,31 +373,60 @@ class Projects extends Component {
                             <CardText>
                                 리액트 네이티브 날씨어플
                         </CardText>
-                     
-                        <CardActions border>
-                            <Button a href="https://github.com/parkshhy/todo" target = "_blank">⚙️GIT HUB</Button>
-                            <Button a href="https://parkshhy.github.io/todo/" target = "_blank">🖥WEB PAGE</Button>
-                        </CardActions>
-                        </Card>*/}
 
-                  
-                        </div>
+                            <CardActions border keyType="1" >
+                                <Button a href="https://github.com/parkshhy/todo" target="_blank">⚙️GIT HUB</Button>
+                                <Button a href="https://github.com/parkshhy/todo" target="_blank">⚙️GIT HUB</Button>
+
+                            </CardActions>
+                        </Card>
+
+
                     </div>
+                </div>
+
+            )
+        } else if (this.state.activeTab === 0) {
+            return (
+                <div>
+                    <div className="projects-grid">
+                        <Card className="box" shadow={5} style={{ minWidh: '450', margin: 'auto' }}>
+                            <img src={JAVABOOK} alt="spring" style={{ width: '59%',margin: 'auto' }} />
+                            <CardText>
+                               JAVA 
+                            </CardText>
+                        </Card>
+
+                        <Card className="box" shadow={5} style={{ minWidh: '450', margin: 'auto' }}>
+                            <img src={SPRING} alt="spring" style={{ width: '100%' }} />
+                            <CardText>
+                                SPRIG BOOT
+                            </CardText>
+                        </Card>
+
+                        <Card className="box" shadow={5} style={{ minWidh: '450', margin: 'auto' }}>
+                            <img src={SPRING1} alt="spring" style={{ width: '53%',margin: 'auto'  }} />
+                            <CardText>
+                                SPRIG BOOT
+                            </CardText>
+                        </Card>        
 
 
-
-
-
+                    </div>
+                </div>
 
             )
         }
+
     }
+
 
     render() {
         return (
             <div>
                 <Tabs activeTab={this.state.activeTab}
                     onChange={(tabId => this.setState({ activeTab: tabId }))} ripple>
+                    <Tab><strong>↳個人勉強</strong></Tab>
                     <Tab><strong>↳教育機関 プロジェクト</strong></Tab>
                     <Tab><strong>↳個人プロジェクト</strong></Tab>
                     <Tab><strong>↳経歴事項</strong></Tab>
@@ -277,3 +441,4 @@ class Projects extends Component {
     }
 }
 export default Projects;
+
